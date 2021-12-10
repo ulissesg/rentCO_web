@@ -7,23 +7,20 @@ const Menu = () => {
         
         <nav class='dp-menu'>
             <ul>
-                <li><a href=''>Inicio</a></li>
-                <li><a href=''>Clientes</a>
+                <li><a href='/locacoes'>Inicio</a></li>
+                <li><a href='/clientes'>Clientes</a>
                     <ul>
-                        <li><a href='#'>Adicionar</a></li>
-                        <li><a href='#'>Listar todos</a></li>
+                        <li><a href='/criar-cliente'>Adicionar</a></li>
                     </ul>
                 </li>
-                <li><a href='#'>Produtos</a>
+                <li><a href='/produtos'>Produtos</a>
                     <ul>
-                        <li><a href='#'>Adicionar</a></li>
-                        <li><a href='#'>Listar todos</a></li>
+                        <li><a href='/criar-produto'>Adicionar</a></li>
                     </ul>
                 </li>
-                <li><a href='#'>Locação</a>
+                <li><a href='/locacoes'>Locação</a>
                     <ul>
-                        <li><a href='#'>Adicionar</a></li>
-                        <li><a href='#'>Listar todos</a></li>
+                        <li><a href='/criar-locacao'>Adicionar</a></li>
                     </ul>
                 </li>
             </ul>
