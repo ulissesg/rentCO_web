@@ -1,0 +1,33 @@
+.message{
+    margin: 2%;
+    text-align: center;
+}
+
+.form{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.lif{
+    text-align: center;
+    margin: 2%;
+}
+
+.sublif{
+    width: 60%;
+    margin: auto;
+}
+
+.sublif label{
+    text-align: center;
+    display: block;
+}
+
+button{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-import api from "../services/api";
+import { Link } from "react-router-dom";
+import api from "../../services/api";
+import './clients.css';
 
 export default function Client (){
   const [clients, setClients] = useState([]);
+
 
   useEffect(() => {
     api.get('/client/list')
@@ -13,9 +16,13 @@ export default function Client (){
   return (
       <div>
         {clients.map(client => (
-          <li key={client._id}>
-            <p>{client.name}</p>
-          </li>
+          <div key={client._id} className="client">
+            <div>
+              <Link to={{
+                pathname:"/client/" + client._id
+                }}>Nome: { client.name }</Link>
+            </div>
+          </div>
         ))}
       </div>
   )
