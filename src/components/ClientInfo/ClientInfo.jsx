@@ -38,6 +38,7 @@ export default function ClientInfo (){
             <div className="client">
                 {message}
                 <div className="subClient">
+                    <p>ID: { client._id }</p>
                     <p>Nome: {client.name}</p>
                     <p>Telefone:  {client.telephone}</p>
                     <p>Endereço:  {client.address}</p>

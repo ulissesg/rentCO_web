@@ -40,6 +40,7 @@ export default function ProductInfo (){
             <div className="client">
                 {message}
                 <div className="subClient">
+                    <p>ID: { product._id }</p>
                     <p>Codigo: {product.code}</p>
                     <p>descrição:  {product.description}</p>
                     <p>Tipo:  {product.type}</p>

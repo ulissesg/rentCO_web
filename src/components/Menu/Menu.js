@@ -7,7 +7,7 @@ const Menu = () => {
         
         <nav class='dp-menu'>
             <ul>
-                <li><a href='/locacoes'>Inicio</a></li>
+                <li><a href='/'>Inicio</a></li>
                 <li><a href='/clientes'>Clientes</a>
                     <ul>
                         <li><a href='/criar-cliente'>Adicionar</a></li>
