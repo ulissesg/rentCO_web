@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import api from "../../services/api";
 import './clientInfo.css';
 
 
 
 export default function ClientInfo (){
+    
     const [client, setClient] = useState([]);
 
     function deletar(_id){
@@ -30,9 +32,7 @@ export default function ClientInfo (){
         })
         .catch((err) => console.log('the following error ocurred while listing the clients: ' + err.message))
     },[url])
-
-    console.log(client);
-
+    
     if(client != null){
         return (
             <div className="client">
@@ -46,13 +46,16 @@ export default function ClientInfo (){
                 </div>
                 <div className="subClient">
                     <button onClick={() => {deletar(client._id)}}>Deletar</button>
-                    <button>Editar</button>
+                    <Link to={{
+                        pathname: '/client/update/' + client._id
+                    }}><button>Editar </button></Link>
+                                          
                 </div>
             </div>
         )
       }
     return(
-        <div>Cliente não encontrado</div>
+        <div className="client">Cliente não encontrado</div>
     )
 }
 

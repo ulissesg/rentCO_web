@@ -4,3 +4,8 @@
     margin: 2%;
     padding: 2%;
 }
+
+.client a{
+    text-decoration: none;
+    color: black;
+}
